@@ -11,6 +11,11 @@
 */
 
 .page {
+  font-family: var(--main-font, inter-variable, arial, sans-serif);
   min-inline-size: 320px;
   min-block-size: 100dvb;
+}
+
+.header {
+  font-family: var(--accent-font);
 }
