@@ -1,10 +1,9 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-
   /* Шрифты */
   --main-font: inter-variable, arial, sans-serif;
-  --accent-font: pressstart2p-regular,'Courier New', sans-serif;
+  --accent-font: pressstart2p-regular, 'Courier New', sans-serif;
 
   /* Вес шрифта */
   --font-weight-card-text: 400;

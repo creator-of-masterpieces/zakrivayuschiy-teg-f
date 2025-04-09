@@ -10,7 +10,6 @@
 
 */
 
-
 /* Общие классы */
 
 .container {
@@ -21,7 +20,12 @@
   padding: 9.4px 32px;
   border: var(--border, 2px solid #000);
   background-color: transparent;
-  font-family: var(--accent-font, pressstart2p-regular,'Courier New', sans-serif);
+  font-family: var(
+    --accent-font,
+    pressstart2p-regular,
+    'Courier New',
+    sans-serif
+  );
 }
 
 /* page */
@@ -33,18 +37,23 @@
   min-inline-size: 320px;
   padding: 100px clamp(0rem, -8.1426rem + 34.7418vw, 23.125rem);
   font-family: var(--main-font, inter-variable, arial, sans-serif);
-  font-variation-settings: "wght" var(--font-weight-card-text, 400);
-  background-image: linear-gradient(#E7E7E7, #E7E7E7);
+  font-variation-settings: 'wght' var(--font-weight-card-text, 400);
+  background-image: linear-gradient(#e7e7e7, #e7e7e7);
   background-attachment: fixed;
 }
-
 
 /* header */
 
 .header {
   border: var(--border, 2px solid #000);
-  padding: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem) clamp(0.875rem, -1.4688rem + 10vw, 7.53125rem);
-  font-family: var(--accent-font, pressstart2p-regular,'Courier New', sans-serif);
+  padding: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem)
+    clamp(0.875rem, -1.4688rem + 10vw, 7.53125rem);
+  font-family: var(
+    --accent-font,
+    pressstart2p-regular,
+    'Courier New',
+    sans-serif
+  );
   background-color: #fff;
 }
 
@@ -63,15 +72,17 @@
   text-align: center;
 }
 
-
 /* main */
 
 .page__main {
   margin-block-start: 100px;
 }
 
-
 /* card-list */
+
+.card-list__item:not(:first-child) {
+  margin-block-start: 50px;
+}
 
 .card {
   background-color: #fff;
@@ -82,7 +93,7 @@
   padding: 10px 10px 4px;
   font-size: var(--font-size-card-title);
   line-height: 1.12;
-  font-variation-settings: "wght" var(--font-weight-card-title, 700);
+  font-variation-settings: 'wght' var(--font-weight-card-title, 700);
 }
 
 .card__image-label {
@@ -90,10 +101,19 @@
   z-index: 1;
   inset-block-start: 26px;
   inset-inline-end: 11px;
-  font-family: var(--accent-font,  pressstart2p-regular,'Courier New', sans-serif);
+  font-family: var(
+    --accent-font,
+    pressstart2p-regular,
+    'Courier New',
+    sans-serif
+  );
   font-size: 14px;
   line-height: 1;
-  text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff;
+  text-shadow:
+    1px 0 0 #fff,
+    -1px 0 0 #fff,
+    0 1px 0 #fff,
+    0 -1px 0 #fff;
   mix-blend-mode: hard-light;
 }
 
@@ -106,10 +126,37 @@
   }
 }
 
-.card__image-wrap{
+.card__image-wrap {
   position: relative;
 }
 
+.clean-slate .card__image {
+  filter: grayscale(80%);
+}
+
+.doubt .card__image {
+  filter: saturate(350%);
+}
+
+.ideal .card__image {
+  filter: hue-rotate(30deg);
+}
+
+.houmies .card__image {
+  filter: invert(80%);
+}
+
+.strategies .card__image {
+  filter: sepia(90%);
+}
+
+.give-up .card__image {
+  filter: blur(10px);
+}
+
+.here .card__image {
+  filter: hue-rotate(100deg) blur(1.3px) contrast(35%) saturate(200%) brightness(100%);
+}
 .card__description-wrap {
   padding: 22px 25px 0;
 }
@@ -117,7 +164,7 @@
 .card__description {
   font-size: var(--font-weight-size-text, 18px);
   line-height: var(--line-height-card-text, 1.166);
-  letter-spacing: .01em;
+  letter-spacing: 0.01em;
 }
 
 .card__memories-place {
@@ -140,4 +187,3 @@
 .card__like-button {
   margin: 25px 0;
 }
-
