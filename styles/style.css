@@ -10,26 +10,45 @@
 
 */
 
+
+/* Общие классы */
+
+.container {
+  inline-size: var(--section-width);
+}
+
+.button {
+  padding: 9.4px 32px;
+  border: var(--border, 2px solid #000);
+  background-color: transparent;
+  font-family: var(--accent-font, pressstart2p-regular,'Courier New', sans-serif);
+}
+
+/* page */
+
 .page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-inline-size: 320px;
-  min-block-size: 100dvb;
+  padding: 100px clamp(0rem, -8.1426rem + 34.7418vw, 23.125rem);
   font-family: var(--main-font, inter-variable, arial, sans-serif);
   font-variation-settings: "wght" var(--font-weight-card-text, 400);
-  padding: clamp(0rem, -8.1866rem + 34.9296vw, 23.25rem);
-  background-image: linear-gradient(#000, #fff);
+  background-image: linear-gradient(#E7E7E7, #E7E7E7);
   background-attachment: fixed;
 }
 
+
+/* header */
+
 .header {
-  block-size: 100dvb;
-  inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
-  border: 2px solid #000;
+  border: var(--border, 2px solid #000);
   padding: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem) clamp(0.875rem, -1.4688rem + 10vw, 7.53125rem);
   font-family: var(--accent-font, pressstart2p-regular,'Courier New', sans-serif);
   background-color: #fff;
 }
 
-.main-title {
+.header-title {
   inline-size: clamp(21.4375rem, 18.9727rem + 10.5164vw, 28.4375rem);
   margin: auto;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
@@ -38,6 +57,87 @@
   text-align: center;
 }
 
-.main-subtitle {
+.header-subtitle {
+  margin-block-start: 18px;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  text-align: center;
 }
+
+
+/* main */
+
+.page__main {
+  margin-block-start: 100px;
+}
+
+
+/* card-list */
+
+.card {
+  background-color: #fff;
+  border: var(--border, 2px solid #000);
+}
+
+.card__title {
+  padding: 10px 10px 4px;
+  font-size: var(--font-size-card-title);
+  line-height: 1.12;
+  font-variation-settings: "wght" var(--font-weight-card-title, 700);
+}
+
+.card__image-label {
+  position: absolute;
+  z-index: 1;
+  inset-block-start: 26px;
+  inset-inline-end: 11px;
+  font-family: var(--accent-font,  pressstart2p-regular,'Courier New', sans-serif);
+  font-size: 14px;
+  line-height: 1;
+  text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff;
+  mix-blend-mode: hard-light;
+}
+
+@supports ((-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff)) {
+
+  .card__image-label {
+    -webkit-text-stroke: 1px #fff;
+    text-stroke: 1px #fff;
+    text-shadow: none;
+  }
+}
+
+.card__image-wrap{
+  position: relative;
+}
+
+.card__description-wrap {
+  padding: 22px 25px 0;
+}
+
+.card__description {
+  font-size: var(--font-weight-size-text, 18px);
+  line-height: var(--line-height-card-text, 1.166);
+  letter-spacing: .01em;
+}
+
+.card__memories-place {
+  margin-block-start: 27px;
+}
+
+.card__buttons-wrap {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
+}
+
+.card__icon-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.card__like-button {
+  margin: 25px 0;
+}
+

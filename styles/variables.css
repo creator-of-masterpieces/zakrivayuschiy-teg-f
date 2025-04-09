@@ -5,6 +5,21 @@
   /* Шрифты */
   --main-font: inter-variable, arial, sans-serif;
   --accent-font: pressstart2p-regular,'Courier New', sans-serif;
+
+  /* Вес шрифта */
   --font-weight-card-text: 400;
   --font-weight-card-title: 700;
+
+  /* Размер шрифта */
+  --font-size-card-title: 18px;
+  --font-size-card-text: 18px;
+
+  /* Высота строки */
+  --line-height-card-text: 1.166;
+
+  /* Размеры блоков */
+  --section-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+
+  /* Декоративные элементы */
+  --border: 2px solid #000;
 }
