@@ -70,6 +70,7 @@
   margin-block-start: 18px;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-align: center;
+  text-transform: uppercase;
 }
 
 /* main */
@@ -110,25 +111,25 @@
   font-size: 14px;
   line-height: 1;
   text-shadow:
-    1px 0 0 rgba(255, 255, 255, .5),
-    -1px 0 0 rgba(255, 255, 255, .5),
-    0 1px 0 rgba(255, 255, 255, .5),
-    0 -1px 0 rgba(255, 255, 255, .5);
+    1px 0 0 rgba(255 255 255 / .5),
+    -1px 0 0 rgba(255 255 255 / .5),
+    0 1px 0 rgba(255 255 255 / .5),
+    0 -1px 0 rgba(255 255 255 / .5);
   mix-blend-mode: hard-light;
 }
 
 @supports ((-webkit-text-stroke: 1px rgba(255, 255, 255, .5)) or (text-stroke: 1px rgba(255, 255, 255, .5))) {
 
   .card__image-label {
-    -webkit-text-stroke: 1px rgba(255, 255, 255, .5);
-    text-stroke: 1px rgba(255, 255, 255, .5);
+    -webkit-text-stroke: 1px rgba(255 255 255 / .5);
+    text-stroke: 1px rgba(255 255 255 / .5);
     text-shadow: none;
   }
 }
 
 .card__image-wrap {
   position: relative;
-  block-size: 375px;
+  block-size: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
   border-block-start: var(--border, 2px solid #000);
   border-block-end: var(--border, 2px solid #000);
   overflow: hidden;
@@ -220,10 +221,11 @@
   translate: -50%;
   grid-template-columns: 39px 1fr;
   grid-template-rows: repeat(2, min-content);
-  min-inline-size: 341px;
+  inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
   column-gap: 20px;
   row-gap: 30px;
   padding: 30px 42px;
+  border: var(--border, 2px solid #000);
   background-color: #fff;
   font-family: var(--accent-font, pressstart2p-regular, 'Courier New', sans-serif);
   font-size: 14px;
@@ -260,4 +262,41 @@
   background-color: inherit;
   text-transform: inherit;
   cursor: pointer;
+}
+
+@media (width > 375px) {
+
+  .header-subtitle {
+    margin-block-start: 20px;
+  }
+
+  .page__main {
+    margin-block-start: 101px;
+  }
+
+  .card__title {
+    padding: 6px 10px 4px;
+  }
+
+  .card__description-wrap {
+    padding: 29.5px 25px 0;
+  }
+
+  .card__description {
+    letter-spacing: 0;
+  }
+
+  .memory-button {
+    flex-direction: row;
+    margin: 49px auto 0;
+  }
+
+  .memory__button-icon {
+    max-width: 21px;
+  }
+
+  .popap {
+    padding: 30px;
+  }
+  
 }
