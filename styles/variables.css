@@ -21,4 +21,5 @@
 
   /* Декоративные элементы */
   --border: 2px solid #000;
+  --background-page: repeating-linear-gradient(#d3d3d3 )
 }

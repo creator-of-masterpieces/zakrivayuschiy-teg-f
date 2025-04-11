@@ -38,8 +38,10 @@
   padding: 100px clamp(0rem, -8.1426rem + 34.7418vw, 23.125rem);
   font-family: var(--main-font, inter-variable, arial, sans-serif);
   font-variation-settings: 'wght' var(--font-weight-card-text, 400);
-  background-image: linear-gradient(#e7e7e7, #e7e7e7);
-  background-attachment: fixed;
+  background-image: repeating-linear-gradient(to right, #d3d3d3, #d3d3d3 2px, rgba(255 255 255 / 0) 2px, rgba(255 255 255 / 0) 4px),
+                    repeating-linear-gradient(to bottom,#d3d3d3, #d3d3d3 2px, rgba(255 255 255 / 0) 2px, rgba(255 255 255 / 0) 4px),
+                    linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+  background-attachment: cover;
 }
 
 /* header */
