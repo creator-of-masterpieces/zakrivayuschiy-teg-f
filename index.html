@@ -51,33 +51,39 @@
               <button class="card__icon-button">
                 <svg
                   class="like-icon"
-                  xmlns="http://www.w3.org/2000/svg"
                   width="39"
                   height="36"
                   fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <g clip-path="url(#a)">
+                    <g class="heart">
+                      <path
+                        class="contour"
+                        d="M12 6H9v3h3V6zm3 0h-3v3h3V6zM9 9H6v3h3V9zm0 3H6v3h3v-3zm0 3H6v3h3v-3zm9-9h-3v3h3V6zm-6 12H9v3h3v-3zm3 3h-3v3h3v-3zm3 3h-3v3h3v-3zm9-18h3v3h-3V6zm-3 0h3v3h-3V6zm6 3h3v3h-3V9zm0 3h3v3h-3v-3zm0 3h3v3h-3v-3zm-9-9h3v3h-3V6zm6 12h3v3h-3v-3zm-3 3h3v3h-3v-3zm-3 3h3v3h-3v-3zm0 3h-3v3h3v-3zm0-18h-3v3h3V9z"
+                        fill="var(--color-heart-contour, #000)"
+                      />
+                      <path
+                        class="main-body"
+                        d="M12 9H9v3h3V9zm3 3h-3v3h3v-3zm3-3h-3v3h3V9zm-6 6H9v3h3v-3zm3 0h-3v3h3v-3zm0 3h-3v3h3v-3zm3-6h-3v3h3v-3zm0 9h-3v3h3v-3zm0-3h-3v3h3v-3zm9-9h3v3h-3V9zm-3 0h3v3h-3V9zm3 3h3v3h-3v-3zm-3 0h3v3h-3v-3zm-3-3h3v3h-3V9zm6 6h3v3h-3v-3zm-3 0h3v3h-3v-3zm0 3h3v3h-3v-3zm-3-6h3v3h-3v-3zm0 9h3v3h-3v-3zm0-3h3v3h-3v-3zm0 3h-3v3h3v-3zm0 3h-3v3h3v-3z"
+                        fill="var(--color-heart-main-body, red)"
+                      />
+                      <path
+                        class="core"
+                        d="M18 15h-3v3h3v-3zm3 0h3v3h-3v-3zm0 0h-3v3h3v-3zm0-3h-3v3h3v-3zm0 6h-3v3h3v-3z"
+                        fill="var(--color-heart-core, #fff)"
+                      />
+                    </g>
                     <path
-                      fill="#000"
-                      d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
-                    />
-                    <path
-                      fill="red"
-                      d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
-                    />
-                    <path
-                      fill="#fff"
-                      d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
-                    />
-                    <path
-                      fill="red"
-                      d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
+                      class="sparks"
+                      d="M36 13h3v3h-3v-3zm-9 14h3v3h-3v-3zm-9 6h3v3h-3v-3zm-9-6h3v3H9v-3zM24 0h3v3h-3V0zm9 3h3v3h-3V3zM3 3h3v3H3V3zm9-3h3v3h-3V0zM0 13h3v3H0v-3z"
+                      fill="var(--color-heart-sparks, red)"
                     />
                   </g>
                   <defs>
-                    <clippath id="a">
+                    <clipPath id="a">
                       <path fill="#fff" d="M0 0h39v36H0z" />
-                    </clippath>
+                    </clipPath>
                   </defs>
                 </svg>
               </button>
@@ -102,10 +108,11 @@
           <div class="card__description-wrap">
             <p class="card__description">
               На первых этапах мы работали со страхами и сомнениями, которые
-              часто испытывают новички. Один из них — страх перед чистым&nbsp;листом.
-              Это, конечно же, намного сложнее, чем боязнь куска бумаги. Часто
-              за этим ощущением скрываются более глубокие вопросы: с чего
-              начать? а вдруг будет слишком сложно? что, если я не справлюсь?
+              часто испытывают новички. Один из них — страх перед
+              чистым&nbsp;листом. Это, конечно же, намного сложнее, чем боязнь
+              куска бумаги. Часто за этим ощущением скрываются более глубокие
+              вопросы: с чего начать? а вдруг будет слишком сложно? что, если я
+              не справлюсь?
             </p>
             <p class="card__description card__memories-place">
               Место для ваших воспоминаний о начале первого спринта.
@@ -114,33 +121,39 @@
               <button class="card__icon-button">
                 <svg
                   class="like-icon"
-                  xmlns="http://www.w3.org/2000/svg"
                   width="39"
                   height="36"
                   fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <g clip-path="url(#a)">
+                    <g class="heart">
+                      <path
+                        class="contour"
+                        d="M12 6H9v3h3V6zm3 0h-3v3h3V6zM9 9H6v3h3V9zm0 3H6v3h3v-3zm0 3H6v3h3v-3zm9-9h-3v3h3V6zm-6 12H9v3h3v-3zm3 3h-3v3h3v-3zm3 3h-3v3h3v-3zm9-18h3v3h-3V6zm-3 0h3v3h-3V6zm6 3h3v3h-3V9zm0 3h3v3h-3v-3zm0 3h3v3h-3v-3zm-9-9h3v3h-3V6zm6 12h3v3h-3v-3zm-3 3h3v3h-3v-3zm-3 3h3v3h-3v-3zm0 3h-3v3h3v-3zm0-18h-3v3h3V9z"
+                        fill="var(--color-heart-contour, #000)"
+                      />
+                      <path
+                        class="main-body"
+                        d="M12 9H9v3h3V9zm3 3h-3v3h3v-3zm3-3h-3v3h3V9zm-6 6H9v3h3v-3zm3 0h-3v3h3v-3zm0 3h-3v3h3v-3zm3-6h-3v3h3v-3zm0 9h-3v3h3v-3zm0-3h-3v3h3v-3zm9-9h3v3h-3V9zm-3 0h3v3h-3V9zm3 3h3v3h-3v-3zm-3 0h3v3h-3v-3zm-3-3h3v3h-3V9zm6 6h3v3h-3v-3zm-3 0h3v3h-3v-3zm0 3h3v3h-3v-3zm-3-6h3v3h-3v-3zm0 9h3v3h-3v-3zm0-3h3v3h-3v-3zm0 3h-3v3h3v-3zm0 3h-3v3h3v-3z"
+                        fill="var(--color-heart-main-body, red)"
+                      />
+                      <path
+                        class="core"
+                        d="M18 15h-3v3h3v-3zm3 0h3v3h-3v-3zm0 0h-3v3h3v-3zm0-3h-3v3h3v-3zm0 6h-3v3h3v-3z"
+                        fill="var(--color-heart-core, #fff)"
+                      />
+                    </g>
                     <path
-                      fill="#000"
-                      d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
-                    />
-                    <path
-                      fill="red"
-                      d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
-                    />
-                    <path
-                      fill="#fff"
-                      d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
-                    />
-                    <path
-                      fill="red"
-                      d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
+                      class="sparks"
+                      d="M36 13h3v3h-3v-3zm-9 14h3v3h-3v-3zm-9 6h3v3h-3v-3zm-9-6h3v3H9v-3zM24 0h3v3h-3V0zm9 3h3v3h-3V3zM3 3h3v3H3V3zm9-3h3v3h-3V0zM0 13h3v3H0v-3z"
+                      fill="var(--color-heart-sparks, red)"
                     />
                   </g>
                   <defs>
-                    <clippath id="a">
+                    <clipPath id="a">
                       <path fill="#fff" d="M0 0h39v36H0z" />
-                    </clippath>
+                    </clipPath>
                   </defs>
                 </svg>
               </button>
@@ -175,33 +188,39 @@
               <button class="card__icon-button">
                 <svg
                   class="like-icon"
-                  xmlns="http://www.w3.org/2000/svg"
                   width="39"
                   height="36"
                   fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <g clip-path="url(#a)">
+                    <g class="heart">
+                      <path
+                        class="contour"
+                        d="M12 6H9v3h3V6zm3 0h-3v3h3V6zM9 9H6v3h3V9zm0 3H6v3h3v-3zm0 3H6v3h3v-3zm9-9h-3v3h3V6zm-6 12H9v3h3v-3zm3 3h-3v3h3v-3zm3 3h-3v3h3v-3zm9-18h3v3h-3V6zm-3 0h3v3h-3V6zm6 3h3v3h-3V9zm0 3h3v3h-3v-3zm0 3h3v3h-3v-3zm-9-9h3v3h-3V6zm6 12h3v3h-3v-3zm-3 3h3v3h-3v-3zm-3 3h3v3h-3v-3zm0 3h-3v3h3v-3zm0-18h-3v3h3V9z"
+                        fill="var(--color-heart-contour, #000)"
+                      />
+                      <path
+                        class="main-body"
+                        d="M12 9H9v3h3V9zm3 3h-3v3h3v-3zm3-3h-3v3h3V9zm-6 6H9v3h3v-3zm3 0h-3v3h3v-3zm0 3h-3v3h3v-3zm3-6h-3v3h3v-3zm0 9h-3v3h3v-3zm0-3h-3v3h3v-3zm9-9h3v3h-3V9zm-3 0h3v3h-3V9zm3 3h3v3h-3v-3zm-3 0h3v3h-3v-3zm-3-3h3v3h-3V9zm6 6h3v3h-3v-3zm-3 0h3v3h-3v-3zm0 3h3v3h-3v-3zm-3-6h3v3h-3v-3zm0 9h3v3h-3v-3zm0-3h3v3h-3v-3zm0 3h-3v3h3v-3zm0 3h-3v3h3v-3z"
+                        fill="var(--color-heart-main-body, red)"
+                      />
+                      <path
+                        class="core"
+                        d="M18 15h-3v3h3v-3zm3 0h3v3h-3v-3zm0 0h-3v3h3v-3zm0-3h-3v3h3v-3zm0 6h-3v3h3v-3z"
+                        fill="var(--color-heart-core, #fff)"
+                      />
+                    </g>
                     <path
-                      fill="#000"
-                      d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
-                    />
-                    <path
-                      fill="red"
-                      d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
-                    />
-                    <path
-                      fill="#fff"
-                      d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
-                    />
-                    <path
-                      fill="red"
-                      d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
+                      class="sparks"
+                      d="M36 13h3v3h-3v-3zm-9 14h3v3h-3v-3zm-9 6h3v3h-3v-3zm-9-6h3v3H9v-3zM24 0h3v3h-3V0zm9 3h3v3h-3V3zM3 3h3v3H3V3zm9-3h3v3h-3V0zM0 13h3v3H0v-3z"
+                      fill="var(--color-heart-sparks, red)"
                     />
                   </g>
                   <defs>
-                    <clippath id="a">
+                    <clipPath id="a">
                       <path fill="#fff" d="M0 0h39v36H0z" />
-                    </clippath>
+                    </clipPath>
                   </defs>
                 </svg>
               </button>
@@ -238,33 +257,39 @@
               <button class="card__icon-button">
                 <svg
                   class="like-icon"
-                  xmlns="http://www.w3.org/2000/svg"
                   width="39"
                   height="36"
                   fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <g clip-path="url(#a)">
+                    <g class="heart">
+                      <path
+                        class="contour"
+                        d="M12 6H9v3h3V6zm3 0h-3v3h3V6zM9 9H6v3h3V9zm0 3H6v3h3v-3zm0 3H6v3h3v-3zm9-9h-3v3h3V6zm-6 12H9v3h3v-3zm3 3h-3v3h3v-3zm3 3h-3v3h3v-3zm9-18h3v3h-3V6zm-3 0h3v3h-3V6zm6 3h3v3h-3V9zm0 3h3v3h-3v-3zm0 3h3v3h-3v-3zm-9-9h3v3h-3V6zm6 12h3v3h-3v-3zm-3 3h3v3h-3v-3zm-3 3h3v3h-3v-3zm0 3h-3v3h3v-3zm0-18h-3v3h3V9z"
+                        fill="var(--color-heart-contour, #000)"
+                      />
+                      <path
+                        class="main-body"
+                        d="M12 9H9v3h3V9zm3 3h-3v3h3v-3zm3-3h-3v3h3V9zm-6 6H9v3h3v-3zm3 0h-3v3h3v-3zm0 3h-3v3h3v-3zm3-6h-3v3h3v-3zm0 9h-3v3h3v-3zm0-3h-3v3h3v-3zm9-9h3v3h-3V9zm-3 0h3v3h-3V9zm3 3h3v3h-3v-3zm-3 0h3v3h-3v-3zm-3-3h3v3h-3V9zm6 6h3v3h-3v-3zm-3 0h3v3h-3v-3zm0 3h3v3h-3v-3zm-3-6h3v3h-3v-3zm0 9h3v3h-3v-3zm0-3h3v3h-3v-3zm0 3h-3v3h3v-3zm0 3h-3v3h3v-3z"
+                        fill="var(--color-heart-main-body, red)"
+                      />
+                      <path
+                        class="core"
+                        d="M18 15h-3v3h3v-3zm3 0h3v3h-3v-3zm0 0h-3v3h3v-3zm0-3h-3v3h3v-3zm0 6h-3v3h3v-3z"
+                        fill="var(--color-heart-core, #fff)"
+                      />
+                    </g>
                     <path
-                      fill="#000"
-                      d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
-                    />
-                    <path
-                      fill="red"
-                      d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
-                    />
-                    <path
-                      fill="#fff"
-                      d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
-                    />
-                    <path
-                      fill="red"
-                      d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
+                      class="sparks"
+                      d="M36 13h3v3h-3v-3zm-9 14h3v3h-3v-3zm-9 6h3v3h-3v-3zm-9-6h3v3H9v-3zM24 0h3v3h-3V0zm9 3h3v3h-3V3zM3 3h3v3H3V3zm9-3h3v3h-3V0zM0 13h3v3H0v-3z"
+                      fill="var(--color-heart-sparks, red)"
                     />
                   </g>
                   <defs>
-                    <clippath id="a">
+                    <clipPath id="a">
                       <path fill="#fff" d="M0 0h39v36H0z" />
-                    </clippath>
+                    </clipPath>
                   </defs>
                 </svg>
               </button>
@@ -302,33 +327,39 @@
               <button class="card__icon-button">
                 <svg
                   class="like-icon"
-                  xmlns="http://www.w3.org/2000/svg"
                   width="39"
                   height="36"
                   fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <g clip-path="url(#a)">
+                    <g class="heart">
+                      <path
+                        class="contour"
+                        d="M12 6H9v3h3V6zm3 0h-3v3h3V6zM9 9H6v3h3V9zm0 3H6v3h3v-3zm0 3H6v3h3v-3zm9-9h-3v3h3V6zm-6 12H9v3h3v-3zm3 3h-3v3h3v-3zm3 3h-3v3h3v-3zm9-18h3v3h-3V6zm-3 0h3v3h-3V6zm6 3h3v3h-3V9zm0 3h3v3h-3v-3zm0 3h3v3h-3v-3zm-9-9h3v3h-3V6zm6 12h3v3h-3v-3zm-3 3h3v3h-3v-3zm-3 3h3v3h-3v-3zm0 3h-3v3h3v-3zm0-18h-3v3h3V9z"
+                        fill="var(--color-heart-contour, #000)"
+                      />
+                      <path
+                        class="main-body"
+                        d="M12 9H9v3h3V9zm3 3h-3v3h3v-3zm3-3h-3v3h3V9zm-6 6H9v3h3v-3zm3 0h-3v3h3v-3zm0 3h-3v3h3v-3zm3-6h-3v3h3v-3zm0 9h-3v3h3v-3zm0-3h-3v3h3v-3zm9-9h3v3h-3V9zm-3 0h3v3h-3V9zm3 3h3v3h-3v-3zm-3 0h3v3h-3v-3zm-3-3h3v3h-3V9zm6 6h3v3h-3v-3zm-3 0h3v3h-3v-3zm0 3h3v3h-3v-3zm-3-6h3v3h-3v-3zm0 9h3v3h-3v-3zm0-3h3v3h-3v-3zm0 3h-3v3h3v-3zm0 3h-3v3h3v-3z"
+                        fill="var(--color-heart-main-body, red)"
+                      />
+                      <path
+                        class="core"
+                        d="M18 15h-3v3h3v-3zm3 0h3v3h-3v-3zm0 0h-3v3h3v-3zm0-3h-3v3h3v-3zm0 6h-3v3h3v-3z"
+                        fill="var(--color-heart-core, #fff)"
+                      />
+                    </g>
                     <path
-                      fill="#000"
-                      d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
-                    />
-                    <path
-                      fill="red"
-                      d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
-                    />
-                    <path
-                      fill="#fff"
-                      d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
-                    />
-                    <path
-                      fill="red"
-                      d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
+                      class="sparks"
+                      d="M36 13h3v3h-3v-3zm-9 14h3v3h-3v-3zm-9 6h3v3h-3v-3zm-9-6h3v3H9v-3zM24 0h3v3h-3V0zm9 3h3v3h-3V3zM3 3h3v3H3V3zm9-3h3v3h-3V0zM0 13h3v3H0v-3z"
+                      fill="var(--color-heart-sparks, red)"
                     />
                   </g>
                   <defs>
-                    <clippath id="a">
+                    <clipPath id="a">
                       <path fill="#fff" d="M0 0h39v36H0z" />
-                    </clippath>
+                    </clipPath>
                   </defs>
                 </svg>
               </button>
@@ -363,33 +394,39 @@
               <button class="card__icon-button">
                 <svg
                   class="like-icon"
-                  xmlns="http://www.w3.org/2000/svg"
                   width="39"
                   height="36"
                   fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <g clip-path="url(#a)">
+                    <g class="heart">
+                      <path
+                        class="contour"
+                        d="M12 6H9v3h3V6zm3 0h-3v3h3V6zM9 9H6v3h3V9zm0 3H6v3h3v-3zm0 3H6v3h3v-3zm9-9h-3v3h3V6zm-6 12H9v3h3v-3zm3 3h-3v3h3v-3zm3 3h-3v3h3v-3zm9-18h3v3h-3V6zm-3 0h3v3h-3V6zm6 3h3v3h-3V9zm0 3h3v3h-3v-3zm0 3h3v3h-3v-3zm-9-9h3v3h-3V6zm6 12h3v3h-3v-3zm-3 3h3v3h-3v-3zm-3 3h3v3h-3v-3zm0 3h-3v3h3v-3zm0-18h-3v3h3V9z"
+                        fill="var(--color-heart-contour, #000)"
+                      />
+                      <path
+                        class="main-body"
+                        d="M12 9H9v3h3V9zm3 3h-3v3h3v-3zm3-3h-3v3h3V9zm-6 6H9v3h3v-3zm3 0h-3v3h3v-3zm0 3h-3v3h3v-3zm3-6h-3v3h3v-3zm0 9h-3v3h3v-3zm0-3h-3v3h3v-3zm9-9h3v3h-3V9zm-3 0h3v3h-3V9zm3 3h3v3h-3v-3zm-3 0h3v3h-3v-3zm-3-3h3v3h-3V9zm6 6h3v3h-3v-3zm-3 0h3v3h-3v-3zm0 3h3v3h-3v-3zm-3-6h3v3h-3v-3zm0 9h3v3h-3v-3zm0-3h3v3h-3v-3zm0 3h-3v3h3v-3zm0 3h-3v3h3v-3z"
+                        fill="var(--color-heart-main-body, red)"
+                      />
+                      <path
+                        class="core"
+                        d="M18 15h-3v3h3v-3zm3 0h3v3h-3v-3zm0 0h-3v3h3v-3zm0-3h-3v3h3v-3zm0 6h-3v3h3v-3z"
+                        fill="var(--color-heart-core, #fff)"
+                      />
+                    </g>
                     <path
-                      fill="#000"
-                      d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
-                    />
-                    <path
-                      fill="red"
-                      d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
-                    />
-                    <path
-                      fill="#fff"
-                      d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
-                    />
-                    <path
-                      fill="red"
-                      d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
+                      class="sparks"
+                      d="M36 13h3v3h-3v-3zm-9 14h3v3h-3v-3zm-9 6h3v3h-3v-3zm-9-6h3v3H9v-3zM24 0h3v3h-3V0zm9 3h3v3h-3V3zM3 3h3v3H3V3zm9-3h3v3h-3V0zM0 13h3v3H0v-3z"
+                      fill="var(--color-heart-sparks, red)"
                     />
                   </g>
                   <defs>
-                    <clippath id="a">
+                    <clipPath id="a">
                       <path fill="#fff" d="M0 0h39v36H0z" />
-                    </clippath>
+                    </clipPath>
                   </defs>
                 </svg>
               </button>
@@ -426,33 +463,39 @@
               <button class="card__icon-button">
                 <svg
                   class="like-icon"
-                  xmlns="http://www.w3.org/2000/svg"
                   width="39"
                   height="36"
                   fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <g clip-path="url(#a)">
+                    <g class="heart">
+                      <path
+                        class="contour"
+                        d="M12 6H9v3h3V6zm3 0h-3v3h3V6zM9 9H6v3h3V9zm0 3H6v3h3v-3zm0 3H6v3h3v-3zm9-9h-3v3h3V6zm-6 12H9v3h3v-3zm3 3h-3v3h3v-3zm3 3h-3v3h3v-3zm9-18h3v3h-3V6zm-3 0h3v3h-3V6zm6 3h3v3h-3V9zm0 3h3v3h-3v-3zm0 3h3v3h-3v-3zm-9-9h3v3h-3V6zm6 12h3v3h-3v-3zm-3 3h3v3h-3v-3zm-3 3h3v3h-3v-3zm0 3h-3v3h3v-3zm0-18h-3v3h3V9z"
+                        fill="var(--color-heart-contour, #000)"
+                      />
+                      <path
+                        class="main-body"
+                        d="M12 9H9v3h3V9zm3 3h-3v3h3v-3zm3-3h-3v3h3V9zm-6 6H9v3h3v-3zm3 0h-3v3h3v-3zm0 3h-3v3h3v-3zm3-6h-3v3h3v-3zm0 9h-3v3h3v-3zm0-3h-3v3h3v-3zm9-9h3v3h-3V9zm-3 0h3v3h-3V9zm3 3h3v3h-3v-3zm-3 0h3v3h-3v-3zm-3-3h3v3h-3V9zm6 6h3v3h-3v-3zm-3 0h3v3h-3v-3zm0 3h3v3h-3v-3zm-3-6h3v3h-3v-3zm0 9h3v3h-3v-3zm0-3h3v3h-3v-3zm0 3h-3v3h3v-3zm0 3h-3v3h3v-3z"
+                        fill="var(--color-heart-main-body, red)"
+                      />
+                      <path
+                        class="core"
+                        d="M18 15h-3v3h3v-3zm3 0h3v3h-3v-3zm0 0h-3v3h3v-3zm0-3h-3v3h3v-3zm0 6h-3v3h3v-3z"
+                        fill="var(--color-heart-core, #fff)"
+                      />
+                    </g>
                     <path
-                      fill="#000"
-                      d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
-                    />
-                    <path
-                      fill="red"
-                      d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
-                    />
-                    <path
-                      fill="#fff"
-                      d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
-                    />
-                    <path
-                      fill="red"
-                      d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
+                      class="sparks"
+                      d="M36 13h3v3h-3v-3zm-9 14h3v3h-3v-3zm-9 6h3v3h-3v-3zm-9-6h3v3H9v-3zM24 0h3v3h-3V0zm9 3h3v3h-3V3zM3 3h3v3H3V3zm9-3h3v3h-3V0zM0 13h3v3H0v-3z"
+                      fill="var(--color-heart-sparks, red)"
                     />
                   </g>
                   <defs>
-                    <clippath id="a">
+                    <clipPath id="a">
                       <path fill="#fff" d="M0 0h39v36H0z" />
-                    </clippath>
+                    </clipPath>
                   </defs>
                 </svg>
               </button>
@@ -484,39 +527,46 @@
               Ведь часто путь — и есть результат.
             </p>
             <p class="card__description card__memories-place">
-              Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.
+              Место, чтобы остановиться, подумать и написать, что вы чувствуете
+              в этой точке пути.
             </p>
             <div class="card__buttons-wrap">
               <button class="card__icon-button">
                 <svg
                   class="like-icon"
-                  xmlns="http://www.w3.org/2000/svg"
                   width="39"
                   height="36"
                   fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <g clip-path="url(#a)">
+                    <g class="heart">
+                      <path
+                        class="contour"
+                        d="M12 6H9v3h3V6zm3 0h-3v3h3V6zM9 9H6v3h3V9zm0 3H6v3h3v-3zm0 3H6v3h3v-3zm9-9h-3v3h3V6zm-6 12H9v3h3v-3zm3 3h-3v3h3v-3zm3 3h-3v3h3v-3zm9-18h3v3h-3V6zm-3 0h3v3h-3V6zm6 3h3v3h-3V9zm0 3h3v3h-3v-3zm0 3h3v3h-3v-3zm-9-9h3v3h-3V6zm6 12h3v3h-3v-3zm-3 3h3v3h-3v-3zm-3 3h3v3h-3v-3zm0 3h-3v3h3v-3zm0-18h-3v3h3V9z"
+                        fill="var(--color-heart-contour, #000)"
+                      />
+                      <path
+                        class="main-body"
+                        d="M12 9H9v3h3V9zm3 3h-3v3h3v-3zm3-3h-3v3h3V9zm-6 6H9v3h3v-3zm3 0h-3v3h3v-3zm0 3h-3v3h3v-3zm3-6h-3v3h3v-3zm0 9h-3v3h3v-3zm0-3h-3v3h3v-3zm9-9h3v3h-3V9zm-3 0h3v3h-3V9zm3 3h3v3h-3v-3zm-3 0h3v3h-3v-3zm-3-3h3v3h-3V9zm6 6h3v3h-3v-3zm-3 0h3v3h-3v-3zm0 3h3v3h-3v-3zm-3-6h3v3h-3v-3zm0 9h3v3h-3v-3zm0-3h3v3h-3v-3zm0 3h-3v3h3v-3zm0 3h-3v3h3v-3z"
+                        fill="var(--color-heart-main-body, red)"
+                      />
+                      <path
+                        class="core"
+                        d="M18 15h-3v3h3v-3zm3 0h3v3h-3v-3zm0 0h-3v3h3v-3zm0-3h-3v3h3v-3zm0 6h-3v3h3v-3z"
+                        fill="var(--color-heart-core, #fff)"
+                      />
+                    </g>
                     <path
-                      fill="#000"
-                      d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"
-                    />
-                    <path
-                      fill="red"
-                      d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
-                    />
-                    <path
-                      fill="#fff"
-                      d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
-                    />
-                    <path
-                      fill="red"
-                      d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
+                      class="sparks"
+                      d="M36 13h3v3h-3v-3zm-9 14h3v3h-3v-3zm-9 6h3v3h-3v-3zm-9-6h3v3H9v-3zM24 0h3v3h-3V0zm9 3h3v3h-3V3zM3 3h3v3H3V3zm9-3h3v3h-3V0zM0 13h3v3H0v-3z"
+                      fill="var(--color-heart-sparks, red)"
                     />
                   </g>
                   <defs>
-                    <clippath id="a">
+                    <clipPath id="a">
                       <path fill="#fff" d="M0 0h39v36H0z" />
-                    </clippath>
+                    </clipPath>
                   </defs>
                 </svg>
               </button>
@@ -528,12 +578,12 @@
         </li>
       </ul>
 
-<!-- memory-button -->
-      <button 
-      class="button memory-button"
-      type="button"
-      onclick="window['popap-id'].showModal()"
-      aria-label="popap-id"
+      <!-- memory-button -->
+      <button
+        class="button memory-button"
+        type="button"
+        onclick="window['popap-id'].showModal()"
+        aria-label="popap-id"
       >
         <svg
           class="floppy-icon memory__button-icon"
@@ -548,7 +598,7 @@
       </button>
     </main>
 
-<!-- popap -->
+    <!-- popap -->
     <dialog class="popap" id="popap-id">
       <svg
         class="floppy-icon popap__icon"
@@ -560,12 +610,16 @@
         <use href="./images/svg/floppy.svg#floppy" />
       </svg>
       <p class="popap__text">Вставьте дискету,&nbsp;чтобы продолжить</p>
-    <button class="popap__button"
-    type="button"
-    onclick="window['popap-id'].close()">ок</button>
-  </dialog>
+      <button
+        class="popap__button"
+        type="button"
+        onclick="window['popap-id'].close()"
+      >
+        ок
+      </button>
+    </dialog>
 
-<!-- js -->
+    <!-- js -->
     <script src="./scripts/like.js"></script>
   </body>
 </html>

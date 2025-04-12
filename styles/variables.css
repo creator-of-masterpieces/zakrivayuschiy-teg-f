@@ -14,12 +14,24 @@
   --font-size-card-text: 18px;
 
   /* Высота строки */
-  --line-height-card-text: 1.15
+  --line-height-card-text: 1.15;
 
   /* Размеры блоков */
   --section-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
 
   /* Декоративные элементы */
   --border: 2px solid #000;
-  --background-page: repeating-linear-gradient(#d3d3d3 )
+  --shadow-button: 2px 2px 0 0 #000;
+
+  /* Цвета */
+  --color-accent: #000;
+  --color-button: #fff;
+
+  /* Цвет иконки сердца */
+  --color-heart-contour: #000;
+  --color-heart-core: transparent;
+  --color-heart-main-body: transparent;
+  --color-heart-sparks: red;
+  --color-animation-fill: red;
+
 }

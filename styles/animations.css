@@ -9,3 +9,112 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+
+/* Анимации иконки сердца */
+
+/* Увеличение сердца*/
+
+@keyframes heart-scale {
+
+  0% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 1.25;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+/* Появление искр */
+
+@keyframes sparks {
+
+  from {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+/* Увеличение сердца*/
+
+.like-icon.is-liked .heart {
+  animation: heart-scale .3s .1s ease-in 1;
+}
+
+/* Появление искр */
+
+.like-icon.is-liked .sparks {
+  animation: sparks .3s .3s ease-in 1;
+}
+
+/* Заливка сердцевины */
+
+.core {
+  transition: fill .3s .03s linear;
+}
+  
+.card__icon-button:hover .core {
+  fill: var(--color-heart-contour, #000);
+  transition: fill .3s linear;
+}
+
+.card__icon-button:active .core {
+  fill: var(--color-animation-fill, red);
+  transition: fill .3s linear;
+}
+
+/* Заливка сердцевины при клике */
+
+.like-icon.is-liked .core {
+  fill: var(--color-animation-fill, red);
+  transition: fill .3s linear;
+}
+
+/* Заливка тела сердца */
+
+.main-body {
+  transition: fill .3s linear;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--color-heart-contour, #000);
+  transition: fill .3s .05s linear;
+}
+
+.card__icon-button:active .main-body{
+  fill: var(--color-animation-fill, red);
+  transition: fill .3s .05s linear;
+}
+
+/* Заливка тела сердца при клике */
+
+.like-icon.is-liked .main-body {
+  fill: var(--color-animation-fill, red);
+  transition: fill .3s linear;
+}
+
+/* Анимация контура */
+
+.contour {
+  transition: fill .1s linear;
+}
+
+/* Заливка контура при клике */
+
+.like-icon.is-liked .contour {
+  fill: var(--color-animation-fill, red);
+  transition: fill .3s .06s linear;
+}
+
