@@ -347,7 +347,11 @@
   }
 
   .card__description {
-    letter-spacing: 0;
+    letter-spacing: -0.06px;
+  }
+
+  .card__memories-place {
+    margin-block-start: 29px;
   }
 
   .memory-button {
