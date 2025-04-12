@@ -319,6 +319,7 @@
 }
 
 .popap__button {
+  position: relative;
   grid-column: span 2;
   align-self: end;
   padding: 10px 14.5px;
@@ -326,7 +327,35 @@
   background-color: inherit;
   text-transform: inherit;
   cursor: pointer;
+  color: #fff;
+  transition: box-shadow .3s;
+  overflow: hidden;
 }
+
+.popap__button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-accent, #000);
+  translate: -100% 0;
+  transition: translate .5s ease-in-out;
+}
+
+
+.popap__button:hover::after {
+  translate: 0 0;
+}
+
+
+.popap__button:focus {
+  outline: none;
+}
+
+.popap__button:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-button);
+}
+
 
 @media (width > 375px) {
 
