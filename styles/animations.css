@@ -50,7 +50,7 @@
 /* Увеличение сердца*/
 
 .like-icon.is-liked .heart {
-  animation: heart-scale 1s .1s ease-in 1;
+  animation: heart-scale .3s .1s ease-in 1;
   transform-origin: 50% 50%;
 }
 
