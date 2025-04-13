@@ -3,7 +3,7 @@
 :root {
   /* Шрифты */
   --main-font: inter-variable, arial, sans-serif;
-  --accent-font: pressstart2p-regular, 'Courier New', sans-serif;
+  --accent-font: pressstart2p, 'Courier New', sans-serif;
 
   /* Вес шрифта */
   --font-weight-card-text: 400;
@@ -31,7 +31,7 @@
   --color-heart-contour: #000;
   --color-heart-core: transparent;
   --color-heart-main-body: transparent;
-  --color-heart-sparks: red;
-  --color-animation-fill: red;
+  --color-heart-sparks: #f00;
+  --color-animation-fill: #f00;
 
 }
