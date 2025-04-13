@@ -547,7 +547,7 @@
         >
           <use href="./images/svg/floppy.svg#floppy" />
         </svg>
-        <span class="button__text">Сохранить на память</span>
+        <span class="button__text">Сохранить&nbsp;на&nbsp;память</span>
       </button>
     </main>
 
@@ -561,10 +561,12 @@
         viewBox="0 0 39 39"
       >
         <use href="./images/svg/floppy.svg#floppy" />
+        <!-- popap__button -->
+
       </svg>
       <p class="popap__text">Вставьте дискету,&nbsp;чтобы продолжить</p>
       <button
-        class="popap__button"
+        class="button popap__button" 
         type="button"
         aria-label="Закрыть окно"
         onclick="window['popap-id'].close()"
